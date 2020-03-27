@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+var myObj, i, j, x = "";
+myObj = {"name":"Vinod","age":23, "person": [
+    {"name":"Vinod", "frindes":["Raju", "Ramesh", "Mahesh"]},
+    {"name":"Sandeep", "frindes":["Vinod", "Nikit", "Ugam"]},
+    {"name":"Ugam", "frindes":["sandeep", "Nikit","Vinod"] }
+  ]
+}
+for (i in myObj.person) {
+  x += "<h2>" + myObj.person[i].name + "</h2>";
+  for (j in myObj.person[i].frindes) {
+    x += myObj.person[i].frindes[j] + "<br>";
+  }
+}
+document.getElementById("demo").innerHTML = x;
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>json</title>
+</head>
+<body>
+    <p id="demo"></p>
+</body>
+<script>
+    var myJSON = '{"Name":"sandeep", "Age":23,"Email":"gaggenapallysandy487@gmail.com","salary":7000}';
+    var myObj = JSON.parse(myJSON);
+    document.getElementById("demo").innerHTML = myObj.Age;
+</script>
+</html>

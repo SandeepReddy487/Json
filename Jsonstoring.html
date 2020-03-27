@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>storing</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        myObj = {name:'sandeep',Age:24,Email:'gaggenapallysandeep387@gmail.com',salary:7000}
+        myJSON = JSON.stringify(myObj)
+        localStorage.setItem("testJSON",myJSON);
+Text = localStorage.getItem("testJSON");
+myObj = JSON.parse(Text);
+document.getElementById("demo").innerHTML = myObj.Age;
+    </script>
+</body>
+</html>
